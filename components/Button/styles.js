@@ -22,4 +22,10 @@ export const ContainerButton = styled.button`
     &:active {
         opacity: 0.6;
     }
+
+    @media (max-width: 768px) {
+        width: 100%;
+        height: 3rem;
+        font-size: 0.9rem;
+    }
 `

@@ -6,6 +6,11 @@ export const Container = styled.div`
     border-radius: 20px;
     padding: 10px;
     width: max-content;
+
+    @media (max-width: 768px) {
+        width: 100%;
+        border-radius: 10px;
+    }
 `
 
 export const Header = styled.div`
@@ -18,13 +23,16 @@ export const Header = styled.div`
         font-size: 16px;
         color: #b5b5b5;
     }
+
+    @media (max-width: 768px) {
+        display: none;
+    }
 `
 
 export const Body = styled.div`
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     padding: 10px;
-    /* width: max-content; */
     grid-gap: 10px 15px;
 
     img {
@@ -51,6 +59,16 @@ export const Body = styled.div`
 
         p {
             margin-top: 5px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        grid-template-columns: repeat(1, 1fr);
+
+        img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
         }
     }
 `

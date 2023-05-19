@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Container = styled.div`
     background-color: #ffffff;
@@ -46,4 +46,4 @@ export const Container = styled.div`
         font-size: 24px;
         margin-top: 50px;
     }
-`
+`;
